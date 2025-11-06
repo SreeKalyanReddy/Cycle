@@ -377,21 +377,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ## 👨‍💻 Developer
 
-Created with ❤️ by [Your Name]
+Created with ❤️ by Sree Kalyan Reddy
 
-## 🙏 Acknowledgments
-
-- [React](https://reactjs.org/)
-- [Express](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Chart.js](https://www.chartjs.org/)
 - [Google Identity Services](https://developers.google.com/identity)
 
 ---
