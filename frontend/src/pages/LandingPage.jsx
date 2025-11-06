@@ -353,6 +353,14 @@ const LandingPage = () => {
                   <Moon className="h-4 w-4 sm:h-5 sm:w-5 text-gray-600" />
                 )}
               </button>
+              {!isHeroVisible && (
+                <button
+                  onClick={handleDemoLogin}
+                  className="hidden sm:inline bg-indigo-600 hover:bg-indigo-700 text-white px-4 md:px-6 py-2 md:py-2.5 rounded-lg sm:rounded-xl text-sm sm:text-base font-semibold transition-all hover:shadow-lg"
+                >
+                  Try Demo
+                </button>
+              )}
               <button 
                 onClick={handleLoginClick} 
                 className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-medium transition-all border-2 text-sm sm:text-base ${
@@ -363,14 +371,6 @@ const LandingPage = () => {
               >
                 Log in
               </button>
-              {!isHeroVisible && (
-                <button
-                  onClick={handleDemoLogin}
-                  className="bg-indigo-600 hover:bg-indigo-700 text-white px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-2.5 rounded-lg sm:rounded-xl text-sm sm:text-base font-semibold transition-all hover:shadow-lg"
-                >
-                  Try Demo
-                </button>
-              )}
             </div>
           </div>
         </div>
@@ -451,15 +451,6 @@ const LandingPage = () => {
               <animate attributeName="opacity" values="0.5;0.2;0.5" dur="14s" repeatCount="indefinite" />
             </circle>
           </svg>
-        </div>
-
-        {/* Free Forever Badge - Bottom Right */}
-        <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-10 animate-fade-in-up" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
-          <span className={`inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg transition-colors ${
-            darkMode ? 'bg-indigo-900/80 text-indigo-200 border border-indigo-700' : 'bg-indigo-100 text-indigo-600 border border-indigo-200'
-          }`}>
-            Free Forever • No Credit Card Required
-          </span>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
