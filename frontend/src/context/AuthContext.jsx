@@ -93,7 +93,6 @@ export const AuthProvider = ({ children }) => {
       });
       localStorage.setItem('token', response.data.token);
       setUser(response.data.user);
-      toast.success('Welcome to the demo!');
       return response.data;
     } catch (error) {
       console.error('Demo login error:', error);

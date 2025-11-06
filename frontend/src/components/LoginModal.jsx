@@ -56,10 +56,8 @@ const LoginModal = ({ isOpen, onClose, initialCredentials = null }) => {
     try {
       if (showSignup) {
         await register(formData.name, formData.email, formData.password);
-        toast.success('Account created successfully!');
       } else {
         await login(formData.email, formData.password);
-        toast.success('Logged in successfully!');
       }
       handleClose();
     } catch (error) {
@@ -72,7 +70,6 @@ const LoginModal = ({ isOpen, onClose, initialCredentials = null }) => {
   const handleGoogleSuccess = async (credentialResponse) => {
     try {
       await loginWithGoogle(credentialResponse.credential);
-      toast.success('Logged in with Google!');
       handleClose();
     } catch (error) {
       toast.error('Google login failed');
