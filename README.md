@@ -381,8 +381,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 Created with ❤️ by Sree Kalyan Reddy
 
-- [Google Identity Services](https://developers.google.com/identity)
-
----
-
 **Happy Subscription Tracking! 📱💰**
