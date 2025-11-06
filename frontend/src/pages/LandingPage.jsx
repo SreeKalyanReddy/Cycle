@@ -348,9 +348,9 @@ const LandingPage = () => {
                 aria-label="Toggle dark mode"
               >
                 {darkMode ? (
-                  <Sun className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" />
+                  <Sun className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-500" />
                 ) : (
-                  <Moon className="h-4 w-4 sm:h-5 sm:w-5 text-gray-600" />
+                  <Moon className="h-4 w-4 sm:h-5 sm:w-5 text-gray-900" />
                 )}
               </button>
               {!isHeroVisible && (
