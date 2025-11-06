@@ -43,7 +43,6 @@ export const AuthProvider = ({ children }) => {
       
       localStorage.setItem('token', response.data.token);
       setUser(response.data.user);
-      toast.success('Welcome back!');
       return response.data;
     } catch (error) {
       console.error('Google login error:', error);
@@ -57,7 +56,6 @@ export const AuthProvider = ({ children }) => {
       const response = await api.post('/auth/login', { email, password });
       localStorage.setItem('token', response.data.token);
       setUser(response.data.user);
-      toast.success('Welcome back!');
       return response.data;
     } catch (error) {
       console.error('Login error:', error);
