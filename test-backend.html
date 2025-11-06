@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Backend Connection</title>
+</head>
+<body>
+    <h1>Backend Connection Test</h1>
+    <div id="result"></div>
+    <script>
+        async function testConnection() {
+            const resultDiv = document.getElementById('result');
+            
+            // Test backend is running
+            try {
+                resultDiv.innerHTML += '<p>Testing backend connection...</p>';
+                const response = await fetch('http://localhost:5000/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email: 'test@test.com',
+                        password: 'test123'
+                    })
+                });
+                
+                const data = await response.json();
+                resultDiv.innerHTML += `<p>Backend Response Status: ${response.status}</p>`;
+                resultDiv.innerHTML += `<p>Response: ${JSON.stringify(data)}</p>`;
+            } catch (error) {
+                resultDiv.innerHTML += `<p style="color: red;">Error: ${error.message}</p>`;
+            }
+        }
+        
+        testConnection();
+    </script>
+</body>
+</html>
