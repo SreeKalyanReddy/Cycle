@@ -355,7 +355,7 @@ const LandingPage = () => {
               </button>
               <button 
                 onClick={handleLoginClick} 
-                className={`hidden sm:inline px-4 py-2 rounded-lg font-medium transition-all border-2 ${
+                className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-medium transition-all border-2 text-sm sm:text-base ${
                   darkMode 
                     ? 'border-indigo-500 text-indigo-400 hover:bg-indigo-500/10' 
                     : 'border-indigo-600 bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-700 hover:to-purple-700'
